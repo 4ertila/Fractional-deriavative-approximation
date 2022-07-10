@@ -1,0 +1,269 @@
+﻿<Window x:Class="Fractional_Deriavative_Approximation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fractional_Deriavative_Approximation"
+        xmlns:controls="clr-namespace:WpfMath.Controls;assembly=WpfMath"
+        xmlns:opentk="clr-namespace:OpenTK;assembly=OpenTK.GLControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="770.432" Width="1092.5">
+    <Grid Background="Gainsboro" Margin="0,0,0,-1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="673*"/>
+            <RowDefinition Height="17*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="394*"/>
+            <ColumnDefinition Width="681*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+
+        <controls:FormulaControl Formula="\alpha:" 
+                                     HorizontalAlignment="Left"
+                                     FontSize="16"
+                                     Margin="14,314,0,0"
+                                     VerticalAlignment="Top"
+                                     Height="12" Width="51"/>
+
+
+        <controls:FormulaControl Formula="f\left(t\right):" 
+                                     HorizontalAlignment="Left"
+                                     FontSize="16"
+                                     Margin="10,340,0,0"
+                                     VerticalAlignment="Top"
+                                     Height="22" Width="51"/>
+
+        <controls:FormulaControl Formula="y\left(t\right):" 
+                                     HorizontalAlignment="Left"
+                                     FontSize="16"
+                                     Margin="10,370,0,0"
+                                     VerticalAlignment="Top"
+                                     Height="22" Width="51"/>
+
+        <controls:FormulaControl Formula="\tau:" 
+                                     HorizontalAlignment="Left"
+                                     FontSize="16"
+                                     Margin="10,407,0,0"
+                                     VerticalAlignment="Top"
+                                     Height="12" Width="51"/>
+
+        <controls:FormulaControl Formula="n:" 
+                                     HorizontalAlignment="Left"
+                                     FontSize="16"
+                                     Margin="10,438,0,0"
+                                     VerticalAlignment="Top"
+                                     Height="12" Width="51"/>
+
+        <controls:FormulaControl Formula="m:" 
+                                     HorizontalAlignment="Left"
+                                     FontSize="16"
+                                     Margin="10,469,0,0"
+                                     VerticalAlignment="Top"
+                                     Height="12" Width="51"/>
+
+        <TextBox x:Name="TBox_Function"
+                 HorizontalAlignment="Left"
+                 FontSize="16"
+                 Height="25" 
+                 Margin="72,337,0,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="120" Text="4*t^(3/2)/(3*sqrt(pi))"/>
+
+        <TextBox HorizontalAlignment="Left"
+                 x:Name="TBox_Alpha"
+                 FontSize="16"
+                 Height="25"
+                 Margin="72,304,0,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="120" Text="0,5"/>
+
+        <Label 
+               HorizontalAlignment="Left"
+               Margin="14,234,0,0" 
+               VerticalAlignment="Top"
+               Height="61" Width="178">
+            <controls:FormulaControl Formula="t\in\left[0, \tau\right] \\
+                                              \alpha\in\left(0, 1\right)"
+                                     Height="62" Width="86" />
+        </Label>
+
+        <Label 
+               HorizontalAlignment="Left" 
+               Margin="14,10,0,0"
+               VerticalAlignment="Top"
+               ScrollViewer.CanContentScroll="True"
+               ScrollViewer.HorizontalScrollBarVisibility="Visible"
+               Height="224" Width="370">
+            <controls:FormulaControl Formula="y^{\left( \alpha \right)} \left( t \right)
+                                              = \frac{1}{\Gamma\left(1-\alpha\right)}
+                                              \int_0^t\frac{y\left(s\right)}
+                                              {\left(t-s\right)^{\alpha}}\,ds = 
+                                              f\left(t\right)\\
+                                              f\left(t\right)\approx\sum^{m}_{k=0} {a_kt^{k+1-\alpha}}\\
+                                              y\left(t\right)\approx\sum^{m}_{k=0} {b_kt^{k}}" 
+                                     Height="214"
+                                     Width="360"/>
+        </Label>
+
+        <TextBox x:Name="TBox_Tau"
+            FontSize="16"
+            HorizontalAlignment="Left"
+            Height="26"
+            Margin="72,397,0,0"
+            TextWrapping="Wrap"
+            Text="5"
+            VerticalAlignment="Top"
+            Width="120"/>
+
+        <Border BorderBrush="Black" 
+                BorderThickness="1"
+                HorizontalAlignment="Left"
+                Height="600"
+                Margin="10,10,0,0"
+                VerticalAlignment="Top"
+                Width="661" Grid.Column="1">
+            <WindowsFormsHost Margin="9">
+                <opentk:GLControl x:Name="glControl"/>
+            </WindowsFormsHost>
+        </Border>
+
+        <Button x:Name="Button_Approximate"
+                Content="Approximate" 
+                HorizontalAlignment="Left" 
+                Click="Button_Approximate_Click"
+                Margin="10,597,0,0"
+                VerticalAlignment="Top"
+                Width="133" Height="66"/>
+
+        <Button x:Name="Button_Draw"
+                Content="Draw"
+                HorizontalAlignment="Left"
+                Margin="148,597,0,0"
+                VerticalAlignment="Top"
+                Width="133" Height="66"
+                Click="Button_Draw_Click"/>
+
+        <TextBox x:Name="TBox_n"
+            FontSize="16"
+            HorizontalAlignment="Left"
+            Height="26"
+            Margin="72,428,0,0"
+            TextWrapping="Wrap"
+            Text="100"
+            VerticalAlignment="Top"
+            Width="120"/>
+
+        <TextBox x:Name="TBox_m"
+            FontSize="16"
+            HorizontalAlignment="Left"
+            Height="26"
+            Margin="72,459,0,0"
+            TextWrapping="Wrap"
+            Text="5"
+            VerticalAlignment="Top"
+            Width="120"/>
+
+        <TextBox x:Name="TBox_Solve"
+            HorizontalAlignment="Left"
+            FontSize="16"
+            Height="25" 
+            Margin="72,367,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="120" Text="t"/>
+
+        <ScrollViewer x:Name="ScrollViewer_yInfo"
+                      HorizontalAlignment="Left"
+                      Height="100"
+                      Margin="10,492,0,0"
+                      VerticalAlignment="Top"
+                      Width="374"/>
+
+        <Label 
+               HorizontalAlignment="Left"
+               Margin="197,459,0,0"
+               VerticalAlignment="Top" Height="26" Width="67">
+            <controls:FormulaControl Formula="m \le n" 
+                                     Height="26"
+                                     Width="57"/>
+        </Label>
+
+        <CheckBox x:Name="CheckBox_Solve"
+                  HorizontalAlignment="Left"
+                  Margin="196,365,0,0"
+                  VerticalAlignment="Top" Height="15" Width="17">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2"/>
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+
+        <Label Content="Left:"
+               Grid.Column="1"
+               HorizontalAlignment="Left"
+               Margin="11,619,0,0"
+               FontSize="16"
+               VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_Left"
+                 Grid.Column="1"
+                 HorizontalAlignment="Left"
+                 Height="23"
+                 Margin="82,622,0,0" 
+                 FontSize="16"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="98"/>
+
+        <Label Content="Bottom:"
+            Grid.Column="1"
+            HorizontalAlignment="Left"
+            Margin="11,647,0,0"
+               FontSize="16"
+            VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_Bottom"
+            Grid.Column="1"
+            HorizontalAlignment="Left"
+            Height="23"
+            Margin="82,650,0,0"
+                 FontSize="16"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="98"/>
+
+        <Label Content="Right:"
+            Grid.Column="1"
+            HorizontalAlignment="Left"
+            Margin="220,619,0,0"
+               FontSize="16"
+            VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_Right"
+            Grid.Column="1"
+            HorizontalAlignment="Left"
+            Height="23"
+            Margin="273,622,0,0" 
+            TextWrapping="Wrap"
+                 FontSize="16"
+            VerticalAlignment="Top"
+            Width="98"/>
+
+        <Label Content="Top:"
+            Grid.Column="1"
+            HorizontalAlignment="Left"
+            Margin="220,647,0,0"
+               FontSize="16"
+            VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_Top"
+            Grid.Column="1"
+            HorizontalAlignment="Left"
+            Height="23"
+            Margin="273,650,0,0" 
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            FontSize="16"
+            Width="98"/>
+
+    </Grid>
+</Window>
+

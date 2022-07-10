@@ -1,0 +1,50 @@
+D:\C#\Fractional Deriavative Approximation\bin\Debug\Fractional Deriavative Approximation.exe.config
+D:\C#\Fractional Deriavative Approximation\bin\Debug\Fractional Deriavative Approximation.exe
+D:\C#\Fractional Deriavative Approximation\bin\Debug\Fractional Deriavative Approximation.pdb
+D:\C#\Fractional Deriavative Approximation\bin\Debug\FParsec.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\FParsecCS.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\FSharp.Core.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\MathLib.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\MathNet.Numerics.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\MathNet.Numerics.FSharp.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\MathNet.Symbolics.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\OpenTK.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\OpenTK.GLControl.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\WpfMath.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\FParsec.xml
+D:\C#\Fractional Deriavative Approximation\bin\Debug\FParsecCS.xml
+D:\C#\Fractional Deriavative Approximation\bin\Debug\FSharp.Core.xml
+D:\C#\Fractional Deriavative Approximation\bin\Debug\MathLib.pdb
+D:\C#\Fractional Deriavative Approximation\bin\Debug\MathNet.Numerics.xml
+D:\C#\Fractional Deriavative Approximation\bin\Debug\MathNet.Numerics.FSharp.xml
+D:\C#\Fractional Deriavative Approximation\bin\Debug\OpenTK.pdb
+D:\C#\Fractional Deriavative Approximation\bin\Debug\OpenTK.xml
+D:\C#\Fractional Deriavative Approximation\bin\Debug\OpenTK.GLControl.pdb
+D:\C#\Fractional Deriavative Approximation\bin\Debug\OpenTK.GLControl.xml
+D:\C#\Fractional Deriavative Approximation\bin\Debug\cs\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\de\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\en\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\es\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\fr\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\it\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\ja\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\ko\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\pl\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\pt-BR\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\ru\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\tr\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\zh-Hans\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\bin\Debug\zh-Hant\FSharp.Core.resources.dll
+D:\C#\Fractional Deriavative Approximation\obj\Debug\Fractional Deriavative Approximation.csproj.AssemblyReference.cache
+D:\C#\Fractional Deriavative Approximation\obj\Debug\MainWindow.g.cs
+D:\C#\Fractional Deriavative Approximation\obj\Debug\App.g.cs
+D:\C#\Fractional Deriavative Approximation\obj\Debug\Fractional Deriavative Approximation_MarkupCompile.cache
+D:\C#\Fractional Deriavative Approximation\obj\Debug\Fractional Deriavative Approximation_MarkupCompile.lref
+D:\C#\Fractional Deriavative Approximation\obj\Debug\MainWindow.baml
+D:\C#\Fractional Deriavative Approximation\obj\Debug\Fractional Deriavative Approximation.g.resources
+D:\C#\Fractional Deriavative Approximation\obj\Debug\Fractional_Deriavative_Approximation.Properties.Resources.resources
+D:\C#\Fractional Deriavative Approximation\obj\Debug\Fractional Deriavative Approximation.csproj.GenerateResource.cache
+D:\C#\Fractional Deriavative Approximation\obj\Debug\Fractional Deriavative Approximation.csproj.CoreCompileInputs.cache
+D:\C#\Fractional Deriavative Approximation\obj\Debug\Fractional Deriavative Approximation.csproj.CopyComplete
+D:\C#\Fractional Deriavative Approximation\obj\Debug\Fractional Deriavative Approximation.exe
+D:\C#\Fractional Deriavative Approximation\obj\Debug\Fractional Deriavative Approximation.pdb
